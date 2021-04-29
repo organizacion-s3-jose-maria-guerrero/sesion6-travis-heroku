@@ -34,6 +34,31 @@ INSERT INTO `movies` (`name`, `description`, `director`, `embedUrl`, `datePublis
 
 
 --
+-- Estructura de tabla para la tabla `series`
+--
+
+CREATE TABLE IF NOT EXISTS `series` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` TEXT COLLATE utf8_spanish_ci NOT NULL,
+  `description` TEXT COLLATE utf8_spanish_ci NOT NULL,
+  `director` TEXT COLLATE utf8_spanish_ci NOT NULL,
+  `embedUrl` TEXT COLLATE utf8_spanish_ci NOT NULL,
+  `datePublished` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `series`
+--
+
+INSERT INTO `series` (`name`, `description`, `director`, `embedUrl`, `datePublished`) VALUES
+('serie 1', 'descripcion de la serie 1', 'director de la serie 1', 'url de la serie 1', '2000-01-30'),
+('serie 2', 'descripcion de la serie 2', 'director de la serie 2', 'url de la serie 2', '2000-01-30'),
+('serie 3', 'descripcion de la serie 3', 'director de la serie 3', 'url de la serie 3', '2000-01-30');
+
+
+
+--
 -- Estructura de tabla para la tabla `musicalbums`
 --
 
