@@ -12,4 +12,5 @@ composer install
 
 ## Acceso al servidor de producción (Heroku)
 
-http://APP_NAME.herokuapp.com
+
+https://app-pruebas-curso-github.herokuapp.com/
